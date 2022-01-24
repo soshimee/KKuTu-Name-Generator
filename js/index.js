@@ -11,6 +11,7 @@ $(".amount").oninput = () => {
 };
 
 $(".generate").onclick = () => {
+	$(".output").innerText = "";
 	for (let i = 0; i < amount; i++) {
 		const elem = document.createElement("p");
 		elem.innerText = new RandExp(`[ A-Za-z0-9가-힣ㄱ-ㅎㅏ-ㅣ]{${length}}`).gen();
